@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a6315769954a72451c234a21e1dc22f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a6315769954a72451c234a21e1dc22f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a6315769954a72451c234a21e1dc22f5 = L.map(
+                "map_a6315769954a72451c234a21e1dc22f5",
+                {
+                    center: [12.971125, 79.1582875],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_30d1cb4da6d8972b43de6135a14619a9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_30d1cb4da6d8972b43de6135a14619a9.addTo(map_a6315769954a72451c234a21e1dc22f5);
+        
+    
+            var marker_88cd1c449c8e13880163d6ae64b557a8 = L.marker(
+                [12.9713, 79.1575],
+                {
+}
+            ).addTo(map_a6315769954a72451c234a21e1dc22f5);
+        
+    
+            var icon_11c55ec5b54836d9079c85edc1bf2507 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92cb51dce77b85d70a0f22e8239d7d68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dba878910bc5779c9d87e6a242e57e77 = $(`<div id="html_dba878910bc5779c9d87e6a242e57e77" style="width: 100.0%; height: 100.0%;">Feedback: The library in SJT is amazing, so quiet and has all the books I need.</div>`)[0];
+                popup_92cb51dce77b85d70a0f22e8239d7d68.setContent(html_dba878910bc5779c9d87e6a242e57e77);
+            
+        
+
+        marker_88cd1c449c8e13880163d6ae64b557a8.bindPopup(popup_92cb51dce77b85d70a0f22e8239d7d68)
+        ;
+
+        
+    
+    
+            marker_88cd1c449c8e13880163d6ae64b557a8.bindTooltip(
+                `<div>
+                     POSITIVE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_88cd1c449c8e13880163d6ae64b557a8.setIcon(icon_11c55ec5b54836d9079c85edc1bf2507);
+            
+    
+            var marker_ae73f016d8bd5a9cbe0882f2f732f100 = L.marker(
+                [12.9701, 79.1578],
+                {
+}
+            ).addTo(map_a6315769954a72451c234a21e1dc22f5);
+        
+    
+            var icon_87c4564f7e96ed719f436ade168fa1bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_516f7a3ecffbba34572fcf98edb32716 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5edef1d6e60735868cdc7b2ddecd663 = $(`<div id="html_e5edef1d6e60735868cdc7b2ddecd663" style="width: 100.0%; height: 100.0%;">Feedback: The service at Foodys is too slow during peak hours, but the food is decent.</div>`)[0];
+                popup_516f7a3ecffbba34572fcf98edb32716.setContent(html_e5edef1d6e60735868cdc7b2ddecd663);
+            
+        
+
+        marker_ae73f016d8bd5a9cbe0882f2f732f100.bindPopup(popup_516f7a3ecffbba34572fcf98edb32716)
+        ;
+
+        
+    
+    
+            marker_ae73f016d8bd5a9cbe0882f2f732f100.bindTooltip(
+                `<div>
+                     NEUTRAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae73f016d8bd5a9cbe0882f2f732f100.setIcon(icon_87c4564f7e96ed719f436ade168fa1bb);
+            
+    
+            var marker_da54fbb7d060332f7db4c0c317625ae0 = L.marker(
+                [12.972, 79.1593],
+                {
+}
+            ).addTo(map_a6315769954a72451c234a21e1dc22f5);
+        
+    
+            var icon_9bfcd33936263041bc884cb6d02d4c00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_079cd7f09173d93d9db8e2d5c2a54c75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08b070807f94834b8651ef2b9d7f28fa = $(`<div id="html_08b070807f94834b8651ef2b9d7f28fa" style="width: 100.0%; height: 100.0%;">Feedback: Wi-Fi in TT is unreliable. It disconnects frequently during my lab sessions.</div>`)[0];
+                popup_079cd7f09173d93d9db8e2d5c2a54c75.setContent(html_08b070807f94834b8651ef2b9d7f28fa);
+            
+        
+
+        marker_da54fbb7d060332f7db4c0c317625ae0.bindPopup(popup_079cd7f09173d93d9db8e2d5c2a54c75)
+        ;
+
+        
+    
+    
+            marker_da54fbb7d060332f7db4c0c317625ae0.bindTooltip(
+                `<div>
+                     NEUTRAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da54fbb7d060332f7db4c0c317625ae0.setIcon(icon_9bfcd33936263041bc884cb6d02d4c00);
+            
+    
+            var marker_784e3ed2cd887a9fa8832cba3e25ad97 = L.marker(
+                [12.9693, 79.1561],
+                {
+}
+            ).addTo(map_a6315769954a72451c234a21e1dc22f5);
+        
+    
+            var icon_16a80b0aa40aa8d0314a557c0a419fe1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6eabe7b382be8a8c76534a1ffb803de8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07226140d49629c9d9037d0f5bacd670 = $(`<div id="html_07226140d49629c9d9037d0f5bacd670" style="width: 100.0%; height: 100.0%;">Feedback: Attended a great event at Anna Auditorium. The sound system was crystal clear.</div>`)[0];
+                popup_6eabe7b382be8a8c76534a1ffb803de8.setContent(html_07226140d49629c9d9037d0f5bacd670);
+            
+        
+
+        marker_784e3ed2cd887a9fa8832cba3e25ad97.bindPopup(popup_6eabe7b382be8a8c76534a1ffb803de8)
+        ;
+
+        
+    
+    
+            marker_784e3ed2cd887a9fa8832cba3e25ad97.bindTooltip(
+                `<div>
+                     POSITIVE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_784e3ed2cd887a9fa8832cba3e25ad97.setIcon(icon_16a80b0aa40aa8d0314a557c0a419fe1);
+            
+    
+            var marker_3b182ec1465c5ea0c9e8d6598b179ae5 = L.marker(
+                [12.9729, 79.161],
+                {
+}
+            ).addTo(map_a6315769954a72451c234a21e1dc22f5);
+        
+    
+            var icon_145c5252878c69009bd4e4fcabc7aaf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bea0e22f88a692b7f065805a3f9555df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4160ccbbdcd798b4f16a47057bbfd2b4 = $(`<div id="html_4160ccbbdcd798b4f16a47057bbfd2b4" style="width: 100.0%; height: 100.0%;">Feedback: The classrooms in GDN are well-maintained and spacious.</div>`)[0];
+                popup_bea0e22f88a692b7f065805a3f9555df.setContent(html_4160ccbbdcd798b4f16a47057bbfd2b4);
+            
+        
+
+        marker_3b182ec1465c5ea0c9e8d6598b179ae5.bindPopup(popup_bea0e22f88a692b7f065805a3f9555df)
+        ;
+
+        
+    
+    
+            marker_3b182ec1465c5ea0c9e8d6598b179ae5.bindTooltip(
+                `<div>
+                     NEUTRAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b182ec1465c5ea0c9e8d6598b179ae5.setIcon(icon_145c5252878c69009bd4e4fcabc7aaf0);
+            
+    
+            var marker_41e2e666e234ce4822abfd478bee6491 = L.marker(
+                [12.9701, 79.1578],
+                {
+}
+            ).addTo(map_a6315769954a72451c234a21e1dc22f5);
+        
+    
+            var icon_eeb64d844eb09ec74fe3ec33eb8191ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db3ba3a5c8b3bcd03b6cc890f499fc30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b70bd70ec361afbc00cce5d925ccb19a = $(`<div id="html_b70bd70ec361afbc00cce5d925ccb19a" style="width: 100.0%; height: 100.0%;">Feedback: I wish Foodys had more healthy options. It's mostly fast food.</div>`)[0];
+                popup_db3ba3a5c8b3bcd03b6cc890f499fc30.setContent(html_b70bd70ec361afbc00cce5d925ccb19a);
+            
+        
+
+        marker_41e2e666e234ce4822abfd478bee6491.bindPopup(popup_db3ba3a5c8b3bcd03b6cc890f499fc30)
+        ;
+
+        
+    
+    
+            marker_41e2e666e234ce4822abfd478bee6491.bindTooltip(
+                `<div>
+                     POSITIVE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_41e2e666e234ce4822abfd478bee6491.setIcon(icon_eeb64d844eb09ec74fe3ec33eb8191ff);
+            
+    
+            var marker_94639d0ea2ce7aaaebf5b7ed5070ea1d = L.marker(
+                [12.9713, 79.1575],
+                {
+}
+            ).addTo(map_a6315769954a72451c234a21e1dc22f5);
+        
+    
+            var icon_6a5b71e6d608c063b04d093f73256499 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85550f08b3ad4bc429e6a60ce7a27813 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5dc5e7ecac9f4395040d4a332e502fa4 = $(`<div id="html_5dc5e7ecac9f4395040d4a332e502fa4" style="width: 100.0%; height: 100.0%;">Feedback: Finding a free study spot in SJT during exams is nearly impossible. Too crowded.</div>`)[0];
+                popup_85550f08b3ad4bc429e6a60ce7a27813.setContent(html_5dc5e7ecac9f4395040d4a332e502fa4);
+            
+        
+
+        marker_94639d0ea2ce7aaaebf5b7ed5070ea1d.bindPopup(popup_85550f08b3ad4bc429e6a60ce7a27813)
+        ;
+
+        
+    
+    
+            marker_94639d0ea2ce7aaaebf5b7ed5070ea1d.bindTooltip(
+                `<div>
+                     POSITIVE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_94639d0ea2ce7aaaebf5b7ed5070ea1d.setIcon(icon_6a5b71e6d608c063b04d093f73256499);
+            
+    
+            var marker_b83e87efaebf860f9442acde1457a1cb = L.marker(
+                [12.972, 79.1593],
+                {
+}
+            ).addTo(map_a6315769954a72451c234a21e1dc22f5);
+        
+    
+            var icon_d75e1d97d2a984fb9807f3a7f2cf8381 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5eb1ac36446f01443f4a37af2559f879 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe9326ab7370913119a441015be23042 = $(`<div id="html_fe9326ab7370913119a441015be23042" style="width: 100.0%; height: 100.0%;">Feedback: The lab equipment in TT is outdated. We need an upgrade for our experiments.</div>`)[0];
+                popup_5eb1ac36446f01443f4a37af2559f879.setContent(html_fe9326ab7370913119a441015be23042);
+            
+        
+
+        marker_b83e87efaebf860f9442acde1457a1cb.bindPopup(popup_5eb1ac36446f01443f4a37af2559f879)
+        ;
+
+        
+    
+    
+            marker_b83e87efaebf860f9442acde1457a1cb.bindTooltip(
+                `<div>
+                     NEUTRAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b83e87efaebf860f9442acde1457a1cb.setIcon(icon_d75e1d97d2a984fb9807f3a7f2cf8381);
+            
+    
+            var heat_map_b303b85066f7fad86bfdd0b3dfd4ed99 = L.heatLayer(
+                [[12.9713, 79.1575], [12.9701, 79.1578], [12.972, 79.1593], [12.9693, 79.1561], [12.9729, 79.161], [12.9701, 79.1578], [12.9713, 79.1575], [12.972, 79.1593]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_b303b85066f7fad86bfdd0b3dfd4ed99.addTo(map_a6315769954a72451c234a21e1dc22f5);
+        
+</script>
+</html>
