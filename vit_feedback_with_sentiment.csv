@@ -1,0 +1,9 @@
+location_name,latitude,longitude,feedback_text,sentiment
+Silver Jubilee Tower,12.9713,79.1575,"The library in SJT is amazing, so quiet and has all the books I need.",POSITIVE
+Foodys,12.9701,79.1578,"The service at Foodys is too slow during peak hours, but the food is decent.",NEUTRAL
+Technology Tower,12.972,79.1593,Wi-Fi in TT is unreliable. It disconnects frequently during my lab sessions.,NEUTRAL
+Anna Auditorium,12.9693,79.1561,Attended a great event at Anna Auditorium. The sound system was crystal clear.,POSITIVE
+G D Naidu Block,12.9729,79.161,The classrooms in GDN are well-maintained and spacious.,NEUTRAL
+Foodys,12.9701,79.1578,I wish Foodys had more healthy options. It's mostly fast food.,POSITIVE
+Silver Jubilee Tower,12.9713,79.1575,Finding a free study spot in SJT during exams is nearly impossible. Too crowded.,POSITIVE
+Technology Tower,12.972,79.1593,The lab equipment in TT is outdated. We need an upgrade for our experiments.,NEUTRAL
